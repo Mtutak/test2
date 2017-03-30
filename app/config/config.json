@@ -1,0 +1,5 @@
+{
+
+    "dbUri": "mongodb://heroku_m4kjwxtw:j8ss2llvff772pmale9bd7u4te@ds147070.mlab.com:47070/heroku_m4kjwxtw",
+    "jwtSecret": "supersecret"
+}
