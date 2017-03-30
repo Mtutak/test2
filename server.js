@@ -182,8 +182,8 @@ app.post('/projects/new', function(req, res){
 
 	    	// create new project
 	    	Project.create({
-					creator: '58d1bd0d28594f86f2c4ba92',
-					location: "Chicago, IL, United States",
+					creator: req.body.data._id,
+					location: req.body.data.location,
 					title: req.body.data.title,
 					summary: req.body.data.category,
 					detail: req.body.data.detail

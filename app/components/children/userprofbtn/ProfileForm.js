@@ -36,7 +36,7 @@ class ProfileForm extends React.Component {
       location: this.props.location || ''
     });
     console.log('id');
-    console.log(this.state.id);
+    // console.log(this.state.id);
   }
 
   // Lifecycle Methods
@@ -45,12 +45,6 @@ class ProfileForm extends React.Component {
     this.initializeState();
   }
 
-
-//   componentWillMount() {
-//     this.setState({
-//         showModal: false
-//             });
-//         }
 
   render() {
     return (
@@ -99,7 +93,7 @@ class ProfileForm extends React.Component {
                                     onChange={(event) => this.updateInput(event)}
                                     rows="2"
                                     cols="2"
-                                    maxLength="50"
+                                    maxLength="250"
                                     required
                                     className="form-control text-field-box" 
                                     placeholder="I used to read Word Up magazine. Salt'n'Pepa and Heavy D up in the limousine"

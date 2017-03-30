@@ -23,7 +23,7 @@ class CreateProject extends React.Component {
   }
 
   redirectToPosts() {
-    this.context.router.push('posts');
+    this.props.router.push('/projects');
   }
 
   // sendSuccessNotification() {

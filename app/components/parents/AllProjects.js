@@ -63,7 +63,17 @@ class AllProjects extends React.Component {
 	                return (
                     <div className="col-lg-4" id="post-box" onClick={(event) => this.getCreator(event)}>
 	                  <div key={search._id}>
+                      <Link to={
+                        {
+                          pathname: '/friendsProfile/query',
+                          query: {
+                            friend: search._id
+                          }
+                        }
+                      }
+                      activeClassName='active' >
                             <h2 className="project-title">{search.title}</h2>
+                        </Link>
                             <i><h2 className="project-location">{search.location}</h2></i>
                             <h2 className="project-summary">{search.summary}</h2>
                             <h2 className="project-details">{search.detail}</h2>

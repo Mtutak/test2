@@ -1,5 +1,5 @@
 {
-  "name": "Tribe-App",
+  "name": "tribe-app",
   "version": "1.0.0",
   "description": "Get Connected",
   "main": "public/index.html",
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "heroku-postbuild": "webpack -p --config .webpack.prod.config.js --progress"
   },
   "author": "Tribe",
   "license": "ISC",
