@@ -46,9 +46,8 @@ app.use('/auth', authRoutes);
 const apiRoutes = require('./controllers/api');
 app.use('/api', apiRoutes);
 
-var User = require("./models/user.js");
 const jwt = require('jsonwebtoken');
-const config = require('./app/config/config.json');
+
 
 app.get('/bluetooth', function(req, res) {
 	console.log('im here');
